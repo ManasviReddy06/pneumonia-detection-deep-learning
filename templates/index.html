@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pneumonia Detection AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Pneumonia Detection AI</h1>
+    <p class="subtitle">Upload Chest X-Ray to detect Pneumonia</p>
+
+
+
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Predict</button>
+</form>
+
+{% if prediction %}
+<h2>{{ prediction }}</h2>
+{% endif %}
+</div>
+
+</body>
+</html>
