@@ -47,3 +47,10 @@ python src/train_model.py
 2. Predict pneumonia from an image:
 
 python src/predict.py image_path
+## Model Performance
+
+### Accuracy Plot
+![Accuracy](results/accuracy_plot.png)
+
+### Confusion Matrix
+![Confusion Matrix](results/confusion_matrix.png)
